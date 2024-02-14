@@ -1,0 +1,13 @@
+import time
+from plyer import notification
+def send_notification(title, message):
+    notification.notify(
+        title=title,
+        message=message
+    )
+while True:
+    if __name__ == "__main__":
+        title = "Desktop Notification Test"
+        message = "Test"
+
+        send_notification(title, message)
